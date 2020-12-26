@@ -4,7 +4,7 @@
 <div class="peliculas">
     @foreach ($peliculas as $pelicula)
         <div class="pelicula">
-            <img src="{{ URL::asset($pelicula->cartel) }}">
+            <img class="cartel" src="{{ URL::asset($pelicula->cartel) }}">
             <table>
                 <tr>
                     <td><a href="{{route('pelicula.show', $pelicula->id)}}">{{$pelicula->titulo}}</a></td>
@@ -12,7 +12,7 @@
                 <tr>
                     <td>
                         {{$pelicula->anyo}} | {{$pelicula->puntuacion}}
-                        <img src="img/star.png">
+                        <img class="star" src="{{ URL::asset('img/star.png') }}">
                     </td>
                 </tr>
             </table>

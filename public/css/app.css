@@ -51,14 +51,47 @@ body {
 .pelicula:hover {
     box-shadow: 0px 0px 10px rgb(82, 82, 82);
 }
-.pelicula img {
+.pelicula img.cartel {
     width: 250px;
     height: 350px;
 }
 .pelicula table {
     padding: 10px 20px 10px 20px;
 }
-.pelicula table tr td img {
+.star {
     width: 15px;
     height: 15px;
+}
+
+#perfilPelicula {
+    width: 100%;
+}
+#perfilPelicula .titulo {
+    font-weight: 700;
+    font-size: 30px;
+}
+#perfilPelicula #cartel {
+    width: 70%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#perfilPelicula .titulo2 {
+    font-weight: 700;
+    font-size: 20px;
+}
+#perfilPelicula .ultimaModificacion {
+    color: grey;
+    margin-top: 10px;
+}
+
+.ruta {
+    font-size: 17px;
+    color: rgb(124, 124, 124);
+}
+.ruta a {
+    color: rgb(95, 157, 228);
+}
+.ruta a:hover, .ruta a:active {
+    color: rgb(33, 108, 194);
 }
