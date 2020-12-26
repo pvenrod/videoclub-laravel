@@ -16,7 +16,8 @@
             <strong>Reparto: </strong>{{$pelicula->reparto}}<br>
             <strong>Dirección: </strong>{{$pelicula->direccion}}<br>
             <strong>Año </strong>{{$pelicula->anyo}}<br>
-            <strong>Género/s: </strong>{{$pelicula->generos}}<br>
+            <strong>Puntuación </strong>{{$pelicula->puntuacion}}<br>
+            <strong>Última modificación</strong>{{$pelicula->updated_at}}<br>
         </td>
     </tr>
 </table>
