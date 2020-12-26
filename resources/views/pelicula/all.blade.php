@@ -10,9 +10,17 @@
                     <td><a href="{{route('pelicula.show', $pelicula->id)}}">{{$pelicula->titulo}}</a></td>
                 </tr>
                 <tr>
-                    <td>
+                    <td style="text-align: center">
                         {{$pelicula->anyo}} | {{$pelicula->puntuacion}}
                         <img class="star" src="{{ URL::asset('img/star.png') }}">
+                    </td>
+                </tr>
+                <tr style="height: 10px"></tr>
+                <tr>
+                    <td style="text-align: center">
+                        <a class="editar" href="{{route('pelicula.edit', $pelicula->id)}}">Editar</a>
+                        &nbsp;&nbsp;
+                        <a class="borrar" href="{{route('pelicula.delete', $pelicula->id)}}">Borrar</a>
                     </td>
                 </tr>
             </table>

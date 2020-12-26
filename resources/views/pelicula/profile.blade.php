@@ -23,7 +23,10 @@
             <strong>Reparto: </strong>{{$pelicula->reparto}}<br>
             <strong>Dirección: </strong>{{$pelicula->direccion}}<br>
             <strong>Año: </strong>{{$pelicula->anyo}}<br>
-            <strong>Puntuación: </strong>{{$pelicula->puntuacion}}<img class="star" src="{{ URL::asset('img/star.png') }}"><br>
+            <strong>Puntuación: </strong>{{$pelicula->puntuacion}}<img class="star" src="{{ URL::asset('img/star.png') }}"><br><br>
+            <a class="editar" href="{{route('pelicula.edit', $pelicula->id)}}">Editar</a>
+            &nbsp;&nbsp;
+            <a class="borrar" href="{{route('pelicula.delete', $pelicula->id)}}">Borrar</a>
         </td>
     </tr>
     <tr style="height: 30px;"></tr>

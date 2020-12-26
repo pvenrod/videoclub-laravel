@@ -20,3 +20,5 @@ Route::get('/',function() {
 });
 Route::get('/peliculas','PeliculaController@index')->name("pelicula.index");
 Route::get('/pelicula/{id}','PeliculaController@show')->name("pelicula.show");
+Route::get('/pelicula/edit/{id}','PeliculaController@edit')->name("pelicula.edit");
+Route::get('/pelicula/delete/{id}','PeliculaController@delete')->name("pelicula.delete");

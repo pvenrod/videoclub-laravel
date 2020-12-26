@@ -47,6 +47,7 @@ body {
     margin-left: 22px;
     margin-right: 22px;
     display: inline-block;
+    padding-bottom: 10px;
 }
 .pelicula:hover {
     box-shadow: 0px 0px 10px rgb(82, 82, 82);
@@ -58,6 +59,28 @@ body {
 .pelicula table {
     padding: 10px 20px 10px 20px;
 }
+.pelicula .editar, #perfilPelicula .editar {
+    padding: 4px;
+    background-color: rgb(255, 136, 0);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.pelicula .editar:hover, #perfilPelicula .editar:hover {
+    background-color: rgb(255, 115, 0);
+}
+
+.pelicula .borrar, #perfilPelicula .borrar {
+    padding: 4px;
+    background-color: rgb(255, 110, 110);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.pelicula .borrar:hover, #perfilPelicula .borrar:hover  {
+    background-color: rgb(243, 81, 81);
+}
+
 .star {
     width: 15px;
     height: 15px;
