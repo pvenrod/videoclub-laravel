@@ -11,7 +11,7 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-    public function index($hombre) {
-        return "Hola, $nombre";
+    public function index() {
+        return "Hola";
     }
 }

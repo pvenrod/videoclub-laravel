@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\Pelicula;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,10 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/',function() {
+    $data['peliculas'] = Pelicula::all();
+    return view('pelicula.all',$data);
 });
-
-Route::get('/hola/{nombre}','Controller@index');
-
-Route::get('/adios','HolaController@adios');
+Route::get('/peliculas','PeliculaController@index')->name("pelicula.index");
+Route::get('/pelicula/{id}','PeliculaController@show')->name("pelicula.show");

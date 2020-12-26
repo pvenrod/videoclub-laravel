@@ -1,0 +1,64 @@
+@font-face {
+    font-family: mifuente;
+    src: url("Nunito-Regular.ttf");
+}
+body {
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+#pagina {
+    font-family: mifuente;
+    width: 1000px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    box-shadow: 0px 0px 10px grey;
+    border-radius: 5px;
+}
+#header {
+    width: calc(100%-40px);
+    height: 30px;
+    background-color: blue;
+    padding: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 22px;
+    color: white;
+    font-weight: 700;
+}
+#content {
+    width: calc(100%-100px);
+    height: auto;
+    padding: 50px;
+    padding-top: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 22px;
+    font-weight: 700;
+}
+.titulo {
+    font-size: 30px;
+}
+.pelicula {
+    background-color: white;
+    box-shadow: 0px 0px 10px grey;
+    width: 250px;
+    margin-top: 50px;
+    margin-left: 22px;
+    margin-right: 22px;
+    display: inline-block;
+}
+.pelicula:hover {
+    box-shadow: 0px 0px 10px rgb(82, 82, 82);
+}
+.pelicula img {
+    width: 250px;
+    height: 350px;
+}
+.pelicula table {
+    padding: 10px 20px 10px 20px;
+}
+.pelicula table tr td img {
+    width: 15px;
+    height: 15px;
+}
